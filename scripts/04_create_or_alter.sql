@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 BUILD 2023:   Database Change Management
-Script:       02_execute_immediate.sql
+Script:       03_create_or_alter.sql
 Author:       Michał Trzaskowski
 -----------------------------------------------------------------------------*/
 
@@ -9,8 +9,8 @@ Author:       Michał Trzaskowski
 -- USE SCHEMA DB_TRZAS.PUBLIC;
 
 -- ----------------------------------------------------------------------------
--- Step #1: Execute scripts that create initial table in a Git stage
+-- Step #1: Run the CREATE OR ALTER TABLE command from the script in a Git stage
 -- ----------------------------------------------------------------------------
 SHOW TABLES;
 
-EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/snowflake_objects/demo_db/schemas/tables/00_initial_table.sql
+EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/snowflake_objects/demo_db/schemas/tables/table_main.sql
