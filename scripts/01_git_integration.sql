@@ -5,9 +5,9 @@ Author:       Michał Trzaskowski
 -----------------------------------------------------------------------------*/
 
 -- For now steps 1-3 should be run as ACCOUNTADMIN
-USE ROLE ACCOUNTADMIN;
-USE WAREHOUSE XS;
-USE SCHEMA DB_TRZAS.PUBLIC;
+-- USE ROLE ACCOUNTADMIN;
+-- USE WAREHOUSE XS;
+-- USE SCHEMA DB_TRZAS.PUBLIC;
 
 
 -- ----------------------------------------------------------------------------
