@@ -4,4 +4,4 @@ Script:       00_init.sql
 Author:       Michał Trzaskowski
 -----------------------------------------------------------------------------*/
 
-DROP 
+DROP TABLE MY_INVENTORY;
