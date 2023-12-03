@@ -13,6 +13,6 @@ Author:       Michał Trzaskowski
 -- ----------------------------------------------------------------------------
 SHOW TABLES;
 
-EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/scripts/demo_db/01_alter_initial_table.sql;
+EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/scripts/demo_db/01_alter_table_my_inventory.sql;
 
 DESCRIBE TABLE MY_INVENTORY;
