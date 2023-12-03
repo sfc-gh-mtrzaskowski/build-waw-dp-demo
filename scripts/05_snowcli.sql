@@ -1,18 +1,18 @@
 /*-----------------------------------------------------------------------------
 BUILD 2023:   Database Change Management
-Script:       02_execute_immediate.sql
+Script:       05_snowcli.sql
 Author:       Michał Trzaskowski
 -----------------------------------------------------------------------------*/
 
--- USE ROLE ACCOUNTADMIN;
--- USE WAREHOUSE XS;
--- USE SCHEMA DB_TRZAS.PUBLIC;
-
 -- ----------------------------------------------------------------------------
--- Step #1: Execute scripts that create initial table in a Git stage
+-- Step #1: Run our DCM process from SnowCLI
 -- ----------------------------------------------------------------------------
-SHOW TABLES;
 
-EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/scripts/demo_db/00_create_table_my_inventory.sql
+-- Review the deploy_objects.sql script
+
+DESCRIBE TABLE MY_INVENTORY;
+
+-- snow sql -q "ALTER GIT REPOSITORY DEMO_REPO FETCH"
+-- snow sql -q "EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/snowflake_objects/deploy_objects.sql"
 
 DESCRIBE TABLE MY_INVENTORY;

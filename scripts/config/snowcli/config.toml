@@ -1,0 +1,13 @@
+[options]
+default_connection = "qa6"
+
+[connections.qa6]
+account = "account_name"
+user = "user_name"
+password = "user_password"
+host = "account_name.connection_url.snowflakecomputing.com"
+protocol = "https"
+role = "account_role"
+schema = "public"
+database = "DB_NAME"
+warehouse = "XS"

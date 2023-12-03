@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------
 BUILD 2023:   Database Change Management
-Script:       03_create_or_alter.sql
+Script:       04_create_or_alter.sql
 Author:       Michał Trzaskowski
 -----------------------------------------------------------------------------*/
 
@@ -13,4 +13,6 @@ Author:       Michał Trzaskowski
 -- ----------------------------------------------------------------------------
 SHOW TABLES;
 
-EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/snowflake_objects/demo_db/schemas/tables/table_main.sql
+EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/snowflake_objects/demo_db/schemas/tables/my_inventory.sql
+
+DESCRIBE TABLE MY_INVENTORY;

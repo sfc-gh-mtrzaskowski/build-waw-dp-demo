@@ -13,4 +13,6 @@ Author:       Michał Trzaskowski
 -- ----------------------------------------------------------------------------
 SHOW TABLES;
 
-EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/snowflake_objects/demo_db/schemas/tables/01_alter_initial_table.sql
+EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/scripts/demo_db/01_alter_initial_table.sql
+
+DESCRIBE TABLE MY_INVENTORY;

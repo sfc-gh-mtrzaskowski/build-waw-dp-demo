@@ -55,7 +55,8 @@ DESCRIBE GIT REPOSITORY DEMO_REPO;
 -- When using LIST: "Files paths in git repositories must specify a scope.
 -- For example, a branch name, a tag name, or a valid commit hash.
 -- Commit hashes are between 6 and 40 characters long."
-LIST @DEMO_REPO/branches/main;
+
+-- LIST @DEMO_REPO/branches/main;
 -- LIST @DEMO_REPO/tags/tag_name;
 -- LIST @DEMO_REPO/commits/commit_hash;
 
