@@ -13,6 +13,6 @@ Author:       Michał Trzaskowski
 DESCRIBE TABLE MY_INVENTORY;
 
 -- snow sql -q "ALTER GIT REPOSITORY DEMO_REPO FETCH"
--- snow sql -q "EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/snowflake_objects/deploy_objects.sql"
+-- snow sql -q "EXECUTE IMMEDIATE FROM @DEMO_REPO/branches/main/databases/snowflake_objects/deploy_objects.sql"
 
 DESCRIBE TABLE MY_INVENTORY;
