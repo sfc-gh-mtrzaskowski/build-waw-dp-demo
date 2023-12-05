@@ -1,1 +1,1 @@
-EXECUTE IMMEDIATE FROM './databases/demo_db/schemas/demo_schema/tables/my_inventory.sql';
+EXECUTE IMMEDIATE FROM './demo_db/schemas/demo_schema/tables/my_inventory.sql';
